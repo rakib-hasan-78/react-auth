@@ -1,0 +1,12 @@
+nav a {
+    margin-right: 10px;
+    text-decoration: none; /* Remove default underlines */
+    color: blue;
+}
+
+/* This targets the class that NavLink adds to the HTML */
+nav a.active {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
