@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { googleLoginHandler, signoutHandler } from '../../handlers/handlers';
+import { githubLoginHandler, googleLoginHandler, signoutHandler } from '../../handlers/handlers';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase/firebase.init';
@@ -44,6 +44,13 @@ const Login = () => {
                     type="button"
                     >
                     sign with Google
+                    </button>
+                    <button
+                    onClick={githubLoginHandler}
+                    style={{margin:'10px'}}
+                    type="button"
+                    >
+                    sign with GitHub
                     </button>
 
                 </div>
